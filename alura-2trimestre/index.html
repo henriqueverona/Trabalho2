@@ -56,6 +56,9 @@
     <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books "></div>
@@ -65,14 +68,11 @@
      <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre portugol"></div>
      <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade "></div>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 </div>
-
  <div class="card">
   <!-- 1° linha -->
   <div class="card__descrição">
@@ -91,14 +91,43 @@
   <ul class="botões">
     <li class="botões__item"><img src="img/Favoritos.svg" alt="favoritar livro "></li>
     <li class="botões__item"> <img src="img/Compras.svg" alt="Adicionar no carrinho de compras "></li>
-  </ul>]
+  </ul>
   <!-- 2° coluna -->
-  <a href="#" class="botões__ancora ">Saiba mais  </a>
+<div class="botão__da__ancora">  
+  <a href="#" class="botões__ancora">Saiba mais</a>
+
 </div>
     </div> 
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<section class="tópicos">
+  <h2 class="tópicos__titulok">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="tópicos__lista">
+    <li class="tópicos_item">
+      <a href="#" class="tópicos__link">Android</a>
+    </li>
+      <li class="tópicos_item">
+          <a href="#" class="tópicos__link">Marketing</a>
+    </li>
+      <li class="tópicos_item">
+          <a href="#" class="tópicos__link">Startups</a>
+    </li>
+      <li class="tópicos_item">
+          <a href="#" class="tópicos__link">OO</a>
+    </li>
+    <li class="tópicos_item">
+      <a href="#" class="tópicos__link">HTML e CSS </a>
+    </li>    
+    <li class="tópicos_item">
+      <a href="#" class="tópicos__link">Python<li class="tópicos_item"></a>
+        </li>  
+        <li class="tópicos_item">
+          <a href="#" class="tópicos__link">Java</a>
+    </li>
+  </ul>
+</section>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
